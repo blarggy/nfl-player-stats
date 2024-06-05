@@ -1,11 +1,11 @@
 from setuptools import setup, find_packages
 
-setup(
-    name='nfl-player-stats',
-    version='0.1.0',
-    packages=find_packages(),
-    install_requires=[
-        'beautifulsoup4==4.6.0',
-        'requests'
-    ],
+with open("requirements.txt", "r", encoding="utf8") as reqs:
+    required_packages = reqs.read().splitlines()
+
+setuptools.setup(
+    name="nfl-player-stats",
+    include_package_data=True,
+    packages=setuptools.find_packages(),
+    install_requires=required_packages,
 )
