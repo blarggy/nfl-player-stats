@@ -5,7 +5,7 @@ with open("requirements.txt", "r", encoding="utf8") as reqs:
 
 setuptools.setup(
     name="nfl-player-stats",
-   # include_package_data=True,
+    include_package_data=True,
     packages=setuptools.find_packages(),
     install_requires=required_packages,
 )
