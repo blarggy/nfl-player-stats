@@ -1,2 +1,2 @@
-import ./scrape_nfl_stats.py
-import ./json_to_fixture.py
+from . import scrape_nfl_stats
+from . import json_to_fixture.py
